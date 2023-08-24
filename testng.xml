@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Suite" thread-count="2" parallel="tests">
+    <test name="first" parallel="tests" >
+        <classes>
+            <class name="Search"/>
+        </classes>
+    </test>
+    <test name="Second" parallel="tests" >
+        <classes>
+            <class name="Bucket"/>
+        </classes>
+    </test>
+    <test name="third" parallel="tests" >
+        <classes>
+            <class name="Order"/>
+        </classes>
+    </test>
+
+</suite>
